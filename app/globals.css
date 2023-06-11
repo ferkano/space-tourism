@@ -16,7 +16,9 @@
     --background-end-rgb: 0, 0, 0;
   }
 }
-
+html {
+  font-family: var(--font-belle);
+}
 body {
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
@@ -25,4 +27,8 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+}
+.open {
+  transform: translateY(0px);
+  right: 0;
 }

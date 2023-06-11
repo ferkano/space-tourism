@@ -3,7 +3,7 @@
 import React from "react";
 import Image from "next/image";
 
-function ButtonHamburg() {
+function ButtonExit() {
   const handleClick = () => {
     const navbar = document.querySelector(".navbar");
 
@@ -11,12 +11,12 @@ function ButtonHamburg() {
   };
   return (
     <div
-      className="hover:cursor-pointer w-[24px] flex justify-center items-center md:hidden"
+      className="hover:cursor-pointer w-[24px] flex justify-center items-center ms-[188px] mt-[48px] md:hidden"
       onClick={() => handleClick()}
     >
       <Image
-        src="./images/shared/icon-hamburger.svg"
-        alt="btn-hamburg"
+        src="/images/shared/icon-close.svg"
+        alt="btn-close"
         width="40"
         height="40"
       />
@@ -24,4 +24,4 @@ function ButtonHamburg() {
   );
 }
 
-export default ButtonHamburg;
+export default ButtonExit;

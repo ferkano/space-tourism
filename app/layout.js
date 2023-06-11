@@ -1,21 +1,10 @@
 import Header from "@/components/header/Header";
 import "./globals.css";
-import { Zen_Antique, Mohave, Roboto } from "next/font/google";
+import { Bellefair, Mohave, Roboto } from "next/font/google";
 
-const zenAntique = Zen_Antique({
+const bellefair = Bellefair({
   weight: ["400"],
-  variable: "--font-zen",
-  subsets: ["latin"],
-});
-
-const roboto = Roboto({
-  weight: ["400"],
-  subsets: ["latin"],
-  variable: "--font-roboto",
-});
-const mohave = Mohave({
-  weight: ["300"],
-  variable: "--font-mohave",
+  variable: "--font-belle",
   subsets: ["latin"],
 });
 
@@ -28,7 +17,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head lang="es" />
-      <body className={`${zenAntique.className}`}>
+      <body className={`${bellefair.className} min-h-screen max-h-full`}>
         <Header />
         {children}
       </body>
